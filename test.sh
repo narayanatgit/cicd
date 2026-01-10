@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for ((i=$start_port; i<=$end_port; i++)); do
+for i in $(seq "$start_port" "$end_port"); do
   echo "$i"
 done
 

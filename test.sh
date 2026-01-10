@@ -1,13 +1,11 @@
-#!/bin/bash
+#!/bin/sh
+
+check_ports() {
+  echo "Port: $1"
+}
 
 for i in $(seq "$start_port" "$end_port"); do
-  echo "$i"
+  check_ports "$i"
 done
 
-
-echo "===== Concourse Params Test ====="
-echo "Device IP : $csv_ip"
-echo "Username  : $username"
-echo "Message   : $password"
-echo "soag"     : $ceg01
-echo "================================="
+check_ports "$ceg01"

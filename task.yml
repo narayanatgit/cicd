@@ -20,7 +20,5 @@ run:
   - -c
   - |
     set -e
-    ls -l
-    ls -l repo
     chmod +x repo/test.sh
     sh repo/test.sh

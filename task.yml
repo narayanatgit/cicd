@@ -1,12 +1,12 @@
 platform: linux
 
 image_resource:
-  type: docker-image
+  type: registry-image
   source:
     repository: alpine
 
 inputs:
-  - name: repo
+- name: repo
 
 params:
   DEVICE_IP:
@@ -16,7 +16,10 @@ params:
 run:
   path: sh
   args:
-    - -c
-    - |
-      chmod +x repo/test.sh
-      repo/test.sh
+  - -c
+  - |
+    set -e
+    ls -l
+    ls -l repo
+    chmod +x repo/test.sh
+    sh repo/test.sh

@@ -1,14 +1,13 @@
 #!/bin/bash
 
-PORTS=({$start_port..$end_port})
-for i in "${PORTS[@]}"
-do
-  echo $i
+for ((i=$start_port; i<=$end_port; i++)); do
+  echo "$i"
 done
 
 
 echo "===== Concourse Params Test ====="
-echo "Device IP : $DEVICE_IP"
-echo "Username  : $USERNAME"
-echo "Message   : $MESSAGE"
+echo "Device IP : $csv_ip"
+echo "Username  : $username"
+echo "Message   : $password"
+echo "soag"     : $ceg01
 echo "================================="

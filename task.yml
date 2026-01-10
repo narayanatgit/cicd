@@ -1,0 +1,22 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: alpine
+
+inputs:
+  - name: repo
+
+params:
+  DEVICE_IP:
+  USERNAME:
+  MESSAGE:
+
+run:
+  path: sh
+  args:
+    - -c
+    - |
+      chmod +x repo/test.sh
+      repo/test.sh

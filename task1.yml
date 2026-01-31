@@ -1,0 +1,20 @@
+platform: linux
+
+image_resource:
+  type: registry-image
+  source:
+    repository: python
+    tag: "3.10"
+
+inputs:
+- name: my-repo
+
+outputs:
+- name: results   # 👈 THIS is key
+
+run:
+  path: bash
+  args:
+    - -euc
+    - |
+      python my-repo/generate_files.py

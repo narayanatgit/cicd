@@ -10,7 +10,7 @@ inputs:
 - name: my-repo
 
 outputs:
-- name: results   # 👈 THIS is key
+- name: output   # 👈 THIS is key
 
 run:
   path: bash

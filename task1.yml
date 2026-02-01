@@ -19,3 +19,11 @@ run:
     - |
       python my-repo/generate_files.py
       ls -l /output
+      echo "Files in /output:"
+      ls -l /output
+
+      echo "Contents of hello.txt:"
+      cat /output/hello.txt
+
+      echo "Contents of data.csv:"
+      cat /output/data.csv

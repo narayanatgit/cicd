@@ -18,3 +18,4 @@ run:
     - -euc
     - |
       python my-repo/generate_files.py
+      ls -l /output

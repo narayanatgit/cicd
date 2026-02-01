@@ -1,7 +1,7 @@
 import os
 import csv
 
-out_dir = "/concourse-results"
+out_dir = "/output"
 os.makedirs(out_dir, exist_ok=True)
 
 # TXT file

@@ -27,3 +27,6 @@ run:
 
       echo "Contents of data.csv:"
       cat /output/data.csv
+
+      echo "Absolute path of hello.txt:"
+      realpath output/hello.txt

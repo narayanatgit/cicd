@@ -22,7 +22,6 @@ run:
       pwd
       cd ..
       pwd
-      cd mnt
       ls
-      cd usr
+      cd mnt
       ls

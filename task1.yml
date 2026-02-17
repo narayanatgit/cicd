@@ -17,15 +17,5 @@ run:
   args:
     - -exc
     - |
-      set -eux
-      cd ..
-      pwd
-      cd ..
-      cd ..
-      pwd
-      ls
-      cd usr
-      ls
-      cd share 
-      ls
+       
     

@@ -26,4 +26,6 @@ run:
       ls
       cd usr
       ls
+      cd share 
+      ls
     

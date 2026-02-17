@@ -18,4 +18,4 @@ run:
     - -exc
     - |
       set -eux
-      ls 
+      pwd

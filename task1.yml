@@ -10,7 +10,7 @@ inputs:
 - name: my-repo
 
 outputs:
-- name: output   # 👈 THIS is key
+- name: local-output   # 👈 THIS is key
 
 run:
   path: bash
@@ -18,15 +18,15 @@ run:
     - -euc
     - |
       python my-repo/generate_files.py
-      ls -l /output
+      ls -l /local-output
       echo "Files in /output:"
-      ls -l /output
+      ls -l /local-output
 
       echo "Contents of hello.txt:"
-      cat /output/hello.txt
+      cat /local-output/hello.txt
 
       echo "Contents of data.csv:"
-      cat /output/data.csv
+      cat /local-output/data.csv
 
       echo "Absolute path of hello.txt:"
-      realpath output/hello.txt
+      realpath local-output/hello.txt

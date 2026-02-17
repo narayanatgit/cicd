@@ -23,5 +23,4 @@ run:
       cd ..
       pwd
       ls
-      cd mnt
-      ls
+    

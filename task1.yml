@@ -10,12 +10,14 @@ inputs:
 - name: my-repo
 
 outputs:
-- name: local-output   # 👈 THIS is key
+- name: my-repo   # 👈 THIS is key
 
 run:
-  path: bash
+  path: python
   args:
-    - -exc
+    - -c
     - |
+      with open("my-repo/myfile.txt", "w") as f:
+          f.write("Hello from Concourse using PUT!\n")
        
     

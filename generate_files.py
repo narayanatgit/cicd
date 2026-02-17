@@ -1,7 +1,7 @@
 import os
 import csv
 
-out_dir = "/output"
+out_dir = "/local-output"
 os.makedirs(out_dir, exist_ok=True)
 
 # TXT file

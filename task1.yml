@@ -22,7 +22,7 @@ run:
       pwd
       cd ..
       pwd
-      cd ..
+      cd mnt
       ls
-      cd ..
+      cd usr
       ls

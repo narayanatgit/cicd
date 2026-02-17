@@ -15,18 +15,14 @@ outputs:
 run:
   path: bash
   args:
-    - -euc
+    - -exc
     - |
-      python my-repo/generate_files.py
+      set -eux
+      ls -ld /local-output || true
+      python - <<'PY'
+      from pathlib import Path
+      p = Path("/local-output/myfile.txt")
+      p.write_text("hello\n")
+      print("WROTE:", p, "exists:", p.exists())
+      PY
       ls -l /local-output
-      echo "Files in /output:"
-      ls -l /local-output
-
-      echo "Contents of hello.txt:"
-      cat /local-output/hello.txt
-
-      echo "Contents of data.csv:"
-      cat /local-output/data.csv
-
-      echo "Absolute path of hello.txt:"
-      realpath local-output/hello.txt

@@ -23,6 +23,6 @@ run:
       cd ..
       pwd
       cd ..
-      pwd
+      ls
       cd ..
-      pwd
+      ls

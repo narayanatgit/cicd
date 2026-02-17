@@ -18,11 +18,4 @@ run:
     - -exc
     - |
       set -eux
-      ls -ld /local-output || true
-      python - <<'PY'
-      from pathlib import Path
-      p = Path("/local-output/myfile.txt")
-      p.write_text("hello\n")
-      print("WROTE:", p, "exists:", p.exists())
-      PY
-      ls -l /local-output
+      ls 
